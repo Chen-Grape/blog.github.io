@@ -1,0 +1,277 @@
+
+* {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				-webkit-touch-callout: none;
+				/* prevent callout to copy image, etc when tap to hold */
+				-webkit-text-size-adjust: none;
+				/* prevent webkit from resizing text to fit */
+				-webkit-tap-highlight-color: rgba(210, 210, 210, 0.35);
+				/* make transparent link selection, adjust last value opacity 0 to 1.0 */
+				-webkit-user-select: none;
+				/* prevent copy paste, to allow, change 'none' to 'text' */
+			}
+			body {
+				font-family: "微软雅黑";
+				font-size: 12px;
+			}
+			
+			ul,li {
+				list-style: none;
+				text-decoration: none;
+				display: block;
+			}
+
+a {
+	color: #f1aa29;
+	text-decoration: none;
+}
+
+a :hover {
+	color:#fff;
+	text-shadow: ;
+}
+
+#nav-title {
+	background-color: rgb(255, 255, 255, .3);
+	border-color: #FFFFFF;
+	border: 1px;
+	width: 820px;
+	height: 50px;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 4px 4px 10px #e0dbdb;
+	
+}
+
+#nav-title .logo {
+	width: 100px;
+	height: 50px;
+	display: inline-block;
+	margin-bottom: auto;
+	text-align: center;
+	/*水平居中*/
+	line-height: 50px;
+	/*垂直居中*/
+	background-color: #A6E1EC;
+	transition: all 1s;
+	border-bottom: 1px solid #000;
+}
+
+#nav-title ul {
+	width: 60%;
+	height: 25px;
+	float: right;
+	margin-left: 6px;
+}
+
+#nav-title li {
+	/*width: 80px;*/
+	display: inline-block;
+	margin-bottom: -25px;
+}
+
+#nav-title li a {
+	width: 80px;
+	height: 30px;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: "微软雅黑";
+	text-align: center;
+	float: right;
+	line-height: 50px;
+	text-decoration: none;
+	/*text-shadow: .2rem 0rem .2px purple;*/
+}
+
+#nav-title li a:hover {
+	color: #f7fbfd;
+	text-shadow: .2rem 0rem .2em black;
+}
+
+/*
+	Background Stretcher jQuery Plugin
+	� 2011 ajaxBlender.com
+	For any questions please visit www.ajaxblender.com 
+	or email us at support@ajaxblender.com
+*/
+
+HTML {_background: url(/images/trans.gif) no-repeat fixed;}
+.bgstretcher-area { text-align: left; }
+.bgstretcher, .bgstretcher UL, .bgstretcher UL LI {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bgstretcher UL, .bgstretcher UL LI {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.bgstretcher {
+	background: black;
+	overflow: hidden;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	_position: absolute; /*IE6 doesn't support fixed positioning*/
+	top: 0;
+	left: 0;
+}
+tr{
+	width: 100px;	
+	
+}
+/*留言板样式*/
+.board{
+	width: 100%;
+	height: 400px;
+	background-color: #ccc;
+}
+/*个性标签样式*/
+.btn,.btn:visited{
+display: inline-block;
+padding: 4px 10px;
+font:bold 12px/180% Tahoma;
+color: #fff;
+text-decoration: none;
+overflow:hidden;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+cursor: pointer;
+} 
+.btn:hover {
+background-color: #111;
+}
+.btn:active {
+top: 1px;
+}
+.green.btn, .green.btn:visited {
+background-color: #91bd09;
+}
+.green:hover {
+background-color: #749a02;
+}
+.blue, .blue:visited {
+background-color: #2daebf;
+}
+.blue:hover {
+background-color: #007d9a;
+}
+.red, .red:visited {
+background-color: #e33100;
+}
+.red:hover {
+background-color: #872300;
+}
+.magenta, .magenta:visited {
+background-color: #a9014b;
+}
+.magenta:hover {
+background-color: #630030;
+}
+.orange, .orange:visited {
+background-color: #ff5c00;
+}
+.orange:hover {
+background-color: #d45500;
+}
+.yellow, .yellow:visited {
+background-color: #ffb515;
+}
+.yellow:hover {
+background-color: #fc9200;
+}
+.nav-top{
+	width: 800px;
+	height: 200px;
+	/*background-color: #1E9FFF;*/
+	border-bottom: dashed 1px #CCCCCC;
+}
+.nav-top-left{
+	float: left;
+	height: 176px;
+	width: 670px;
+	/*background-color: orange;*/
+}
+.nav-top-left-box{
+	height: 55px;
+	line-height: 66px;
+	text-align: center;
+	/*margin: 0px 0px 0px 30px ;*/
+}
+.nav-top-left-box input{
+	background-color:transparent;
+	color: #000000;
+	
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */    color:    #909; }
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */   color:    #909; }
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */   color:    #909; }
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */   color:    #909; }
+.nav-top-right{
+	margin-top: 25px;
+	float: right;
+	height: 150px;
+	width: 130px;
+	
+}
+.nav-middle{
+	width: 800px;
+	/*height: 200px;*/
+	/*background-color: #FFF;*/
+	border-bottom: dashed 1px #CCCCCC;
+	float: left;
+}
+.nav-middle-title{
+	height: 25px;
+	background-color: #010f1069;
+	line-height: 25px;
+}
+.nav-middle-context{
+	width: 95%;
+	margin: auto;
+	border-top: dashed 1px #010f1069;
+}
+.nav-middle-context p{
+	font-size: 12px;
+}
+.nav-right,.nav-right-timer,.nav-right-mp3,.nav-right-canver{
+	float: right;
+	width: 200px;
+	
+}
+.nav-right{
+	margin-top: -93px;
+}
+
+.nav-right-canver{
+	 height: 600px;
+	/* border: solid 1px #fff;*/
+	 box-shadow: 1px 5px 9px #000;
+	 border-radius: 5px;
+}
+#clock{
+	    text-align: center;
+        font: bold 15pt sans;
+        /*background: #ddf;*/
+        padding: 10px;
+       /* border: solid #fdfcfc 2px;*/
+        border-radius: 10px;
+        box-shadow: 1px 1px 9px #000;
+        
+        }
+.nav-bottom{
+	width: 800px;
+	height: 200px;
+	/*background-color: #000;*/
+	
+}

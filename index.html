@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" src="./js/jquery-1.5.2.min.js"></script>
+		<script type="text/javascript" src="./js/bgstretcher.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/index.css" />
+		<link rel="stylesheet" href="./css/common.css" />
+		<!--看板娘  引入autoload.js 和font-awesome.min.css  -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" />
+		<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+		<!--引入看板娘结束-->
+		
+		<!--引入鼠标特效-->
+		<!--<script type="text/javascript" src="./js/snowflakeCursor.js" ></script>-->
+		<title>Grape</title>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//  Initialize Backgound Stretcher	 
+				//图片切换（简易版轮播图）
+				$('BODY').bgStretcher({
+					images: [
+						'img/sample-1.png',
+						'img/sample-2.png',
+						'img/sample-3.png'
+					],
+					imageWidth: 1014,
+					imageHeight: 572,
+					slideDirection: 'N',
+					slideShowSpeed: 700,
+					transitionEffect: 'fade',
+					sequenceMode: 'random',
+					buttonPrev: '#prev',
+					buttonNext: '#next',
+					pagination: '#nav',
+					anchoring: 'left center',
+					anchoringImg: 'left center'
+				});
+
+			});
+			//transitionEffect  fade渐变  simpleSlide上下切换   sequenceMode//序列正常 normal
+			//
+			function navClick(obj){
+				
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-inverse" id="nav-title">
+			<div class="logo">
+				<a href="#"><img src="img/logo博客.jpg"></a>
+			</div>
+			<ul>
+
+				<span></span>
+				<li>
+					<a href="pindex.html" target="mainpage">&nbsp;&nbsp;首页 &nbsp;&nbsp;</a>
+				</li>
+				
+				<li>
+					<a href="Introduct.html" target="mainpage">个人简介</a>
+				</li>
+				<li>
+					<a href="Dd.html" target="mainpage">生活点滴</a>
+				</li>
+				<li>
+					<a href="picture.html" target="mainpage">摄影集</a>
+				</li>
+				<li>
+					<a href="LeaveMessage.html" target="mainpage">留言板</a>
+				</li>
+				
+			</ul>
+		</nav>
+		<div id="page" >
+			<label class="btnn" title="点击有惊喜">
+				<span style="width: 20px; height: 20px; line-height: 20px; font-size: 30px;text-align: center;">
+					<a href="#" style="text-decoration: none; height: 20px;line-height: 20px;">○</a></span>
+			</label>
+			<div class="left-bank">
+				<div class="weather">
+					<iframe width="240px" scrolling="no" height="25px" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=34&icon=1&num=3">
+					</iframe>
+				</div>
+				<div class="person">
+					<div class="per_head">
+						<img src="img/pheader.jpg"/>
+					</div>
+					
+				</div>
+				<div class="per_nav" style="border-bottom: dashed 1px #DFDFDF;">
+						<tr>
+							<td>昵称：</td>
+							<td style="color: #FFFF00;">Grape</td>
+						</tr>
+				</div>
+				<br />
+				<div class="menu">
+					<ul>
+						<li>
+							<div class="Introduction" style="border-bottom: solid 1px #DFDFDF;">
+								<h5>搭建博客的初衷：</h5>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;起初为了打发无聊的时间，同时也是更好的让自己进去学习的状态的一种方式，以后会越来越完善的，还望在座的各位报以期望
+							    	。本人也会不断学习相关的开发框架。忙于工作和其他的事情，学习进度会稍微慢一点的。
+								</p>
+								
+							</div>
+						</li>
+						<li>
+							<span id="title"  style="font-size: 10px;text-shadow: #F7F7F7;color: #fff;font-weight: 800;">
+								个性标签：
+							</span>
+							<div class="Introduction-title">
+									<a href="#"  class="btn orange">好生</a>
+									<a href="#"  class="btn green">天然呆</a>
+									<a href="#"  class="btn red">个性</a>
+									<a href="#"  class="btn yellow">二次元</a>
+									<a href="#"  class="btn magenta">村上春树</a>
+									<a href="#"  class="btn blue">平凡的世界</a>
+									<a href="#"  class="btn orange">热爱生活</a>
+									<a href="#"  class="btn green">动漫</a>
+									<a href="#"  class="btn red">前端</a>
+									<a href="#"  class="btn yellow">Ajax</a>
+									<a href="#"  class="btn magenta">MySQL</a>
+									<a href="#"  class="btn blue">HTML</a>
+									<a href="#"  class="btn red">CSS</a>
+									<a href="#"  class="btn yellow">虚心好学的菜鸟</a>
+									<a href="#"  class="btn green">java</a>
+									<a href="#"  class="btn magenta">板混</a>
+									<a href="#"  class="btn blue">吃货</a>
+									<a href="#"  class="btn magenta">更多</a>
+									
+							</div>
+						</li>
+						
+						
+						
+						
+					</ul>
+				</div>
+				<!--<div class="music_player">
+					<audio controls="controls">
+						<source src="audio/Sound Horizon - 美しきもの.mp3" autoplay="autoplay"></source>
+					</audio>
+				</div>-->
+				
+			</div>
+		</div>
+		<!--页面主体部分-->	
+		<div id="main">
+			<div class="box"></div>		
+			<iframe width="100%" height="100%" name="mainpage"  margin="0" scrolling="no"></iframe>	
+			
+		</div>			
+		<script>
+			var flag = false;
+			$('.btnn').click(function() {
+				console.log("start");
+				if(flag == false) {
+					$('.left-bank ').fadeIn(1000, function() {
+						console.log("出现");
+						flag = !flag;
+					}); //出现	
+				};
+				if(flag == true) {
+					$('.left-bank ').fadeOut(1000, function() {
+						console.log("消失");
+						flag = !flag;
+					}); //消失
+				};
+					
+				//	$('btn').fadeOut();//消失	
+			});
+			var bl = false;
+			$('nav li').click(function() {
+				console.log("start");
+				if(bl == false) {
+					$('#main ').fadeIn(1000, function() {
+						console.log("出现");
+						bl = !bl;
+					}); //出现	
+				};	
+			})
+			
+		</script>
+	</body>
+	<footer>
+	
+	</footer>
+
+</html>

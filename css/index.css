@@ -1,0 +1,189 @@
+*{
+	padding: 0;
+	margin: 0;
+	padding: 0;
+}
+body #waifu {
+				left: 1050px;
+				line-height: 0;
+				position: fixed;
+				transform: translateY(3px);
+				transition: transform .3s ease-in-out, bottom 3s ease-in-out;
+				z-index: 4;
+			}
+
+
+/*左侧面板样式*/
+#page{
+	position: absolute;
+	width: 30px;
+}
+
+.btnn{
+	
+	width: 20px;
+	height: 20px;
+	margin-left: 6px;
+	/*background-color: rgb(255,255,255,.2);*/
+	
+}
+
+.left-bank {
+	/*width: 5px;
+	height: 40px;*/
+	width: 240px;
+	height: 500px;
+	position: relative;
+	/*background-color: #C4E3F3;*/
+	z-index: 1;
+	background-color: rgb(255,255,255,.2);
+/*	transition: all 0.5s;*/
+	display: none;
+	margin-left: 5px;
+}
+
+
+/*左侧个人基本信息*/
+.weather{
+	/*width: 240px;
+    height: 80px;*/
+    border-bottom:1px solid #000;
+}
+#mobile280 .box{
+	width: 240px;
+}
+.person{
+	height: 100px;
+	/*background-color:#fff;*/
+}
+.per_head{
+	height: 50px;
+}
+.per_head img{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	position: absolute;
+	left: 50%;
+	margin-left: -45px;
+	
+}
+.per_nav{
+	 margin: auto;
+     width: 170px;
+     text-align: center;
+}
+.menu{
+	border: solid .5px #F9F9F9;
+	border-radius: 10px;
+}
+.Introduction{
+	/*width: 230px;*/
+	/*height: 100px;*/
+	font-size: 10px;
+}
+.Introduction-title{
+	margin-top: 5px;
+	border-top: solid .5px #F9F9F9;
+	/*background-color: #f1f1f1;*/
+}
+.per_nav{
+	font-size: 20px;
+		
+}
+/*中间部分*/
+#main{
+	width: 800px;
+	
+	height: 1200px;
+	background: rgb(255,255,255,.2);
+	margin: 20px auto;
+	/*z-index: 2;*/
+	display: none;
+	position: relative;
+}
+/*播放器样式*/
+
+.music_player {
+	display: block;
+	height: 54px;
+}
+
+audio {
+	position: absolute;
+}
+/*跳动的小飞镖**/
+ .box:before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            margin-top: -70px;
+            right: -16px;
+            width: 40px;
+            height: 40px;
+            background: url(../img/feib.png);
+            background-size: 100%;
+            border-radius: 2px;
+            transform: rotate(45deg);
+            -webkit-animation: box .09s infinite;
+        }
+ 
+        @-webkit-keyframes box {
+            0% {
+                top: 50px;
+                transform: rotate(0deg);
+            }
+            20% {
+                border-radius: 2px; /*从20%的地方才开始变形*/
+               transform: rotate(45deg);
+            }
+            50% {
+                top: 50px;
+                border-bottom-right-radius: 25px;
+            }
+            80% {
+                border-radius: 2px; /*到80%的地方恢复原状*/
+             	
+            }
+            100% {
+                top: 50px;
+                transform: rotate(90deg);
+                 
+            }
+        }
+
+        /*.box:after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            top: 128px;
+            left: 52px;
+            width: 44px;
+            height: 3px;
+            background: #eaeaea;
+            border-radius: 100%;
+            -webkit-animation: shadow .8s infinite;
+        }
+ 
+        @-webkit-keyframes shadow {
+            0%, 100% {
+                left: 54px;
+                width: 40px;
+                background: #eaeaea;
+            }
+            50% {
+                top: 126px;
+                left: 50px; /*让阴影保持在原位
+                width: 50px;
+                height: 7px;
+                background: #eee;
+            }
+        }*/
+ 		/*引用中的的冒气球的画布小框*/
+ .nav-canvans{
+ 	width: 120px;
+ 	height: 400px;
+ 	float: right;
+ 	margin-top: -55px;
+ }

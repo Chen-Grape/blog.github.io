@@ -1,0 +1,20 @@
+.title{
+	width: 100%;
+}
+.title h2{
+	display: block;
+	width: 300px;
+	margin: auto;
+	text-align: center;
+}
+.nav-context{
+	width: 650px;
+	
+	display: inline-block;
+}
+.nav-main-title{
+	width: 100%;
+	display: inline-block;
+	background-color: #f1eaea;
+	
+}

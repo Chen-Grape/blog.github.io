@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>点滴</title>
+		<link rel="stylesheet" type="text/css" href="./css/common.css"/>
+	</head>
+	<body>
+		<div class="nav-middle" style="width: 580px; box-shadow: 1px 5px 9px #000;
+			 border-radius: 5px;margin-top: 10px;">
+			<div class="nav-middle-title">
+				<label >生活笔记</label>
+			</div>
+			<div class="nav-middle-context">
+					<h4>xxx：</h4>
+					<h6>事发现场：xxx</h6>
+					<h6>时间：xxx</h6>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						sdsadyuasgdyugads
+					</p>
+					
+			</div>
+		</div>
+		<div class="nav-middle" style="width: 580px; box-shadow: 1px 5px 9px #000;
+			 border-radius: 5px;margin-top: 10px;">
+			<div class="nav-middle-title">
+				<label >生活笔记</label>
+			</div>
+			<div class="nav-middle-context">
+					<h4>xxx：</h4>
+					<h6>事发现场：xxx</h6>
+					<h6>时间：xxx</h6>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						sdsadyuasgdyugads
+					</p>
+					
+			</div>
+		</div>
+		<div class="nav-right">
+			<div class="nav-right-timer">
+				<div id="clock">
+					
+				</div>
+			</div>
+			<!--<div class="nav-right-mp3">
+				
+			</div>-->
+			<div class="nav-right-canver">
+				<iframe width="100%" height="100%" src="3d_word/index.html"  margin="0" scrolling="no"></iframe>	
+			</div>
+		</div>
+		<script type="text/javascript">
+			 function displayTime(){
+            var elt = document.getElementById("clock");
+            var now = new Date();
+            elt.innerHTML  = now.toLocaleTimeString();
+            setTimeout(displayTime,1000);
+            }
+       		 window.onload = displayTime;
+		</script>
+	</body>
+</html>
